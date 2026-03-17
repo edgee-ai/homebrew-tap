@@ -7,10 +7,10 @@ class Edgee < Formula
 
   # SHA256 checksums by platform
   SHA256_BY_PLATFORM = {
-    "aarch64-apple-darwin" => "ed05671a091bb7983f50c59ed9849c71beab63e21c36ea46f8764dc7bb5effae",
-    "x86_64-apple-darwin" => "d6da907259c435488012d2a0c08794bff86f67d408aed6cd7b6fd5b410a2c725",
-    "aarch64-unknown-linux-gnu" => "b38be160525bd520bb2cf73f2462cb87af80793da0657cd9e2624baefe6a7775",
-    "x86_64-unknown-linux-gnu" => "bf680163140b7fdda2118289df242469e1f3fbe042418b38b00bf529c133f8d7"
+    "aarch64-apple-darwin" => "3d539768f77a15b8b0b6ea72503aa17ca52f9de1e9d6e5b5bb141baa5d8d6c89",
+    "x86_64-apple-darwin" => "5c8fa4395437c2252eaa3241b170e9b0269092c5bbd11761c76c9555765cf1f1",
+    "aarch64-unknown-linux-gnu" => "d81bbdfc51695240498724826dc3e36a020abceea2e23a909298476a9389605f",
+    "x86_64-unknown-linux-gnu" => "f9409bf0f7386ffda3629d8866710aa49a5158172f1c7d424c0cbed1795f520c"
   }.freeze
 
   on_macos do
