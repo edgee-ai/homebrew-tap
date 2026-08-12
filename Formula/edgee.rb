@@ -36,6 +36,16 @@ class Edgee < Formula
     chmod 0555, bin/"edgee"
   end
 
+  def caveats
+    <<~EOS
+      This installs only the `edgee` command-line tool.
+
+      For the macOS menubar app — which bundles a matching `edgee` CLI on your
+      PATH — install the cask instead (it conflicts with this formula, so pick one):
+        brew install --cask edgee-ai/tap/edgee-menubar
+    EOS
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/edgee --version")
   end
