@@ -1,10 +1,11 @@
 # Homebrew cask for the Edgee macOS menubar app.
 #
-# Canonical copy lives in edgee-ai/macos-app (Casks/edgee-menubar.rb); the
-# release flow copies it here. `version`/`sha256` are set per release.
+# Canonical copy lives here; the release flow copies it into the tap at
+# edgee-ai/homebrew-tap/Casks/edgee-menubar.rb (see README "Distribution").
+# `version` and `sha256` are filled from `make dist` output for each release.
 cask "edgee-menubar" do
-  version "0.5.0"
-  sha256 "a46eb9c005800742917b4b4dfdb1de46f5718539f71c5d554d7367454c328d75"
+  version "0.5.1"
+  sha256 "09db060dc09ff8037619f346a863b3407d046398430f5c7ba382729738770c08"
 
   url "https://github.com/edgee-ai/macos-app/releases/download/v#{version}/Edgee-#{version}.zip"
   name "Edgee"
@@ -17,8 +18,9 @@ cask "edgee-menubar" do
   depends_on macos: :sonoma
 
   app "Edgee.app"
-  # Expose the bundled CLI on PATH (symlinked into the Homebrew prefix's bin);
-  # it always matches the installed app version. NOTE: the standalone `edgee`
+  # Expose the bundled CLI on PATH (symlinked into the Homebrew prefix's bin).
+  # Its version is pinned independently of the app's — `edgee --version`, or the
+  # app bundle's `EdgeeCLIVersion` key, is what it actually is. NOTE: the standalone `edgee`
   # formula links the same `bin/edgee`; installing both collides (casks can't
   # declare a formula conflict), so pick one — see caveats.
   binary "#{appdir}/Edgee.app/Contents/Resources/edgee"
