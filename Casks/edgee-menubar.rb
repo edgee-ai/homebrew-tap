@@ -4,8 +4,8 @@
 # edgee-ai/homebrew-tap/Casks/edgee-menubar.rb (see README "Distribution").
 # `version` and `sha256` are filled from `make dist` output for each release.
 cask "edgee-menubar" do
-  version "0.5.5"
-  sha256 "36a8a347e059f7516aee7f006f6177a3ce37257683b0da63e23df22e18742d2e"
+  version "0.5.6"
+  sha256 "61fef580c86835cd23689e71d4a3c00feb2e118f7b375ef5abdf53a01eb2e6da"
 
   url "https://github.com/edgee-ai/macos-app/releases/download/v#{version}/Edgee-#{version}.zip"
   name "Edgee"
@@ -32,13 +32,6 @@ cask "edgee-menubar" do
   ]
 
   caveats <<~EOS
-    Edgee.app is ad-hoc signed (not yet notarized by Apple), so Gatekeeper blocks
-    it on first open. Clear the quarantine flag once:
-
-      xattr -dr com.apple.quarantine "#{appdir}/Edgee.app"
-
-    (or right-click Edgee.app in Finder → Open the first time).
-
     This also installs the `edgee` CLI on your PATH; it conflicts with the
     standalone `edgee` formula, so `brew unlink edgee` first if you have it.
   EOS
