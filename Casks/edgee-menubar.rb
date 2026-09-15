@@ -4,8 +4,8 @@
 # edgee-ai/homebrew-tap/Casks/edgee-menubar.rb (see README "Distribution").
 # `version` and `sha256` are filled from `make dist` output for each release.
 cask "edgee-menubar" do
-  version "0.10.1"
-  sha256 "f430719dc18f57175fb00ce1e456138c9b99e33ad3ccabd89f1b6cfc3ab6930c"
+  version "0.11.1"
+  sha256 "3e4409871b640910fef51c8f2790c592245a46078ec3d4a101f20ea31ef8f72e"
 
   url "https://github.com/edgee-ai/macos-app/releases/download/v#{version}/Edgee-#{version}.zip"
   name "Edgee"
