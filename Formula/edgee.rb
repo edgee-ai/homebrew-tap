@@ -1,16 +1,16 @@
 class Edgee < Formula
   desc "Edgee's CLI that runs in your terminal"
   homepage "https://github.com/edgee-ai/edgee"
-  version "0.13.2"
+  version "0.13.3"
   license "Apache-2.0"
   head "https://github.com/edgee-ai/edgee.git", branch: "main"
 
   # SHA256 checksums by platform
   SHA256_BY_PLATFORM = {
-    "aarch64-apple-darwin" => "3fb9ce4e88f56885a39cd527fc80b995358165d6c5dbd92225eff844bff87106",
-    "x86_64-apple-darwin" => "abbceaf557483e5f79a738f256922b7af31df8b3bc3dc19bf2f8f1f720b1f2f4",
-    "aarch64-unknown-linux-gnu" => "07aca6755a5548c87cf73bc0dff52b048512c0edd408e8187eb30aa4b5015c33",
-    "x86_64-unknown-linux-gnu" => "2dbb6cead3f4f84ce59d364cd5960e9e8bca8a42edbb4aaf648746c03ead9fbc"
+    "aarch64-apple-darwin" => "273a8dcb3e8a3d6bcc586e4bdcbb47555d1aef424a7052bf4c00e68a7f37ca0f",
+    "x86_64-apple-darwin" => "b3ea5d4106fe615299b0a1d7bfec651be65e5503d1f687e0facd67bfd269d572",
+    "aarch64-unknown-linux-gnu" => "9f3a03478d65cf6b6cf040482c4c453f3ff506d978c3c79cae55c5398daf2da9",
+    "x86_64-unknown-linux-gnu" => "06be31f81d93d93b168473887c8c95598d9baf6cfee12e939246a352836394bf"
   }.freeze
 
   on_macos do
